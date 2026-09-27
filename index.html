@@ -1,0 +1,477 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blessing Emilefo | BlessAnalyst — Business Analyst &amp; Virtual Assistant</title>
+<meta name="description" content="Blessing Emilefo (BlessAnalyst) is a remote Business Analyst offering data analysis, data entry and virtual assistance — skilled in Excel, MySQL, Python, Power BI and Word.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Blessing Emilefo">
+<meta name="theme-color" content="#7A2048">
+<link rel="canonical" href="https://blessanalyst.github.io/portfolio/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blessanalyst.github.io/portfolio/">
+<meta property="og:site_name" content="BlessAnalyst">
+<meta property="og:title" content="Blessing Emilefo | BlessAnalyst — Business Analyst &amp; Virtual Assistant">
+<meta property="og:description" content="Remote Business Analyst offering data analysis, data entry and virtual assistance — skilled in Excel, MySQL, Python, Power BI and Word.">
+<meta property="og:image" content="https://blessanalyst.github.io/portfolio/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://blessanalyst.github.io/portfolio/">
+<meta name="twitter:title" content="Blessing Emilefo | BlessAnalyst — Business Analyst &amp; Virtual Assistant">
+<meta name="twitter:description" content="Remote Business Analyst offering data analysis, data entry and virtual assistance — skilled in Excel, MySQL, Python, Power BI and Word.">
+<meta name="twitter:image" content="https://blessanalyst.github.io/portfolio/og-image.png">
+<style>
+  :root{
+    --bg:#ECEEF1;
+    --surface:#FFFFFF;
+    --surface-tint:#E7E1EC;
+    --ink:#15181D;
+    --ink-soft:#565C66;
+    --accent:#7A2048;
+    --accent-ink:#FFFFFF;
+    --gold:#C99A2E;
+    --line:#D6D9DE;
+    --good:#2E7D5B;
+    --radius:2px;
+    --font-display:'Fraunces', Georgia, serif;
+    --font-body:'Inter', 'Segoe UI', sans-serif;
+  }
+  html[data-theme="dark"]{
+    --bg:#17141A;
+    --surface:#201B24;
+    --surface-tint:#2A222E;
+    --ink:#F2EFEE;
+    --ink-soft:#B2ABAF;
+    --accent:#E37DA6;
+    --accent-ink:#1A1216;
+    --gold:#E8BE55;
+    --line:#332C38;
+    --good:#4FAE83;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:.001ms !important; transition-duration:.001ms !important;} }
+  body{
+    margin:0; background:var(--bg); color:var(--ink); font-family:var(--font-body);
+    line-height:1.6; transition:background-color .3s ease, color .3s ease;
+    overflow-x:hidden;
+  }
+  a{color:inherit;}
+  h1,h2,h3{font-family:var(--font-display); margin:0;}
+  p{margin:0;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 28px;}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+  section{padding:96px 0;}
+  @media (max-width:760px){ section{padding:64px 0;} .wrap{padding:0 22px;} }
+
+  /* ---------- scroll reveal ---------- */
+  .reveal{
+    opacity:0; transform:translateY(26px);
+    transition:opacity .7s cubic-bezier(.2,.6,.2,1), transform .7s cubic-bezier(.2,.6,.2,1);
+    will-change:opacity, transform;
+  }
+  .reveal.visible{opacity:1; transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1 !important; transform:none !important; transition:none !important;}
+  }
+  /* staggered delays for grouped siblings */
+  .skill-groups .reveal:nth-child(1){transition-delay:.02s;}
+  .skill-groups .reveal:nth-child(2){transition-delay:.10s;}
+  .skill-groups .reveal:nth-child(3){transition-delay:.18s;}
+  .skill-groups .reveal:nth-child(4){transition-delay:.26s;}
+  .skill-groups .reveal:nth-child(5){transition-delay:.34s;}
+  .project-list .reveal:nth-child(1){transition-delay:.02s;}
+  .project-list .reveal:nth-child(2){transition-delay:.10s;}
+  .project-list .reveal:nth-child(3){transition-delay:.18s;}
+  .project-list .reveal:nth-child(4){transition-delay:.26s;}
+  .about-grid .reveal:nth-child(2){transition-delay:.12s;}
+
+  /* ---------- header ---------- */
+  header.site{
+    position:sticky; top:0; z-index:100; background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(10px); border-bottom:1px solid var(--line);
+  }
+  .header-row{
+    max-width:1120px; margin:0 auto; padding:18px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{font-family:var(--font-display); font-weight:600; font-size:1.25rem; text-decoration:none; letter-spacing:-0.01em;}
+  .logo span{color:var(--accent);}
+  nav.desktop-nav{display:flex; align-items:center; gap:34px;}
+  nav.desktop-nav a{font-size:0.94rem; text-decoration:none; color:var(--ink-soft); transition:color .15s ease;}
+  nav.desktop-nav a:hover{color:var(--ink);}
+  .header-actions{display:flex; align-items:center; gap:18px;}
+
+  .badge-remote{
+    display:inline-flex; align-items:center; gap:8px; font-size:0.82rem;
+    background:var(--surface-tint); border:1px solid var(--line); border-radius:20px;
+    padding:6px 13px 6px 10px; white-space:nowrap;
+  }
+  .dot-pulse{width:8px; height:8px; border-radius:50%; background:var(--good); position:relative;}
+  .dot-pulse::after{
+    content:''; position:absolute; inset:0; border-radius:50%; background:var(--good);
+    animation:pulse 2s ease-out infinite;
+  }
+  @keyframes pulse{ 0%{transform:scale(1); opacity:.6;} 100%{transform:scale(2.6); opacity:0;} }
+
+  .theme-btn{
+    background:none; border:1px solid var(--line); border-radius:20px; width:38px; height:38px;
+    display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:0.95rem; color:var(--ink);
+  }
+  .theme-btn:hover{border-color:var(--accent);}
+
+  /* ---------- hamburger (mobile only) ---------- */
+  .burger{
+    display:none; position:relative; width:40px; height:40px; border:none; background:none; cursor:pointer;
+    z-index:210;
+  }
+  .burger span{
+    position:absolute; left:8px; width:24px; height:2px; background:var(--ink); border-radius:2px;
+    transition:transform .35s ease, opacity .25s ease, background .3s ease;
+  }
+  .burger span:nth-child(1){top:14px;}
+  .burger span:nth-child(2){top:20px;}
+  .burger span:nth-child(3){top:26px;}
+  .burger.open span{background:#fff;}
+  .burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+  .burger.open span:nth-child(2){opacity:0;}
+  .burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+
+  .mobile-menu{
+    position:fixed; inset:0; background:var(--accent); z-index:200;
+    display:flex; flex-direction:column; justify-content:center; align-items:flex-start;
+    padding:0 40px; gap:6px;
+    clip-path:circle(2% at calc(100% - 40px) 34px);
+    transition:clip-path .55s cubic-bezier(.65,0,.35,1);
+    pointer-events:none;
+  }
+  .mobile-menu.open{ clip-path:circle(150% at calc(100% - 40px) 34px); pointer-events:auto; }
+  .mobile-menu a{
+    font-family:var(--font-display); font-size:2.5rem; color:var(--accent-ink); text-decoration:none;
+    opacity:0; transform:translateY(16px); transition:opacity .4s ease, transform .4s ease;
+  }
+  .mobile-menu.open a{opacity:1; transform:translateY(0);}
+  .mobile-menu.open a:nth-child(1){transition-delay:.12s;}
+  .mobile-menu.open a:nth-child(2){transition-delay:.18s;}
+  .mobile-menu.open a:nth-child(3){transition-delay:.24s;}
+  .mobile-menu.open a:nth-child(4){transition-delay:.30s;}
+  .mobile-menu.open a:nth-child(5){transition-delay:.36s;}
+  .mobile-menu .m-foot{
+    opacity:0; transform:translateY(16px); transition:opacity .4s ease .42s, transform .4s ease .42s;
+    margin-top:26px; color:var(--accent-ink); font-size:0.85rem; font-family:var(--font-body);
+  }
+  .mobile-menu.open .m-foot{opacity:.85; transform:translateY(0);}
+
+  @media (max-width:760px){
+    nav.desktop-nav{display:none;}
+    .badge-remote.header-only{display:none;}
+    .burger{display:block;}
+  }
+
+  /* ---------- hero ---------- */
+  .hero-grid{
+    display:grid; grid-template-columns:1.3fr 1fr; gap:56px; align-items:center; padding-top:36px;
+  }
+  .hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem); font-weight:600; line-height:1.03; letter-spacing:-0.02em;}
+  .hero h1 em{font-style:italic; color:var(--accent);}
+  .hero .role{font-size:clamp(1.05rem,2vw,1.25rem); color:var(--ink-soft); margin-top:20px; max-width:500px;}
+  .hero-actions{display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;}
+  .btn{
+    font-family:var(--font-body); font-weight:600; font-size:0.95rem; padding:13px 24px;
+    border-radius:30px; text-decoration:none; display:inline-block; border:1px solid transparent; cursor:pointer;
+  }
+  .btn-primary{background:var(--accent); color:var(--accent-ink);}
+  .btn-primary:hover{filter:brightness(1.07);}
+  .btn-ghost{background:transparent; border-color:var(--line); color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--accent);}
+
+  .hero-panel{
+    background:var(--surface-tint); border:1px solid var(--line); border-radius:12px;
+    padding:30px; position:relative; overflow:hidden;
+  }
+  .hero-panel svg{width:100%; height:auto; display:block;}
+  .hero-panel .panel-note{margin-top:18px; font-size:0.9rem; color:var(--ink-soft);}
+  .hero-panel .panel-note strong{color:var(--ink); font-weight:600;}
+
+  @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;} }
+
+  /* ---------- about ---------- */
+  .eyebrow{font-size:0.85rem; color:var(--accent); font-weight:600; display:block; margin-bottom:14px;}
+  h2.section-title{font-size:clamp(1.7rem,3.6vw,2.3rem); font-weight:600; max-width:620px; line-height:1.15;}
+  .about-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; margin-top:34px; align-items:start;}
+  .pull{font-family:var(--font-display); font-size:1.5rem; font-style:italic; line-height:1.4; color:var(--ink);}
+  .about-grid p.body-text{color:var(--ink-soft); font-size:1.02rem; margin-top:20px;}
+  @media (max-width:900px){ .about-grid{grid-template-columns:1fr;} }
+
+  /* ---------- skills ---------- */
+  .skill-groups{display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:36px;}
+  .skill-group{border-top:2px solid var(--accent); padding-top:18px;}
+  .skill-group h3{font-size:1.1rem; font-weight:600; margin-bottom:8px;}
+  .skill-group p{color:var(--ink-soft); font-size:0.92rem; margin-bottom:16px;}
+  .pill-row{display:flex; flex-wrap:wrap; gap:8px;}
+  .pill{
+    font-size:0.86rem; padding:7px 14px; border-radius:20px; background:var(--surface-tint);
+    border:1px solid var(--line);
+  }
+  @media (max-width:760px){ .skill-groups{grid-template-columns:1fr;} }
+
+  /* ---------- projects ---------- */
+  .project-list{margin-top:36px; display:flex; flex-direction:column; border-top:1px solid var(--line);}
+  .project-item{
+    display:grid; grid-template-columns:120px 1fr auto; gap:24px; align-items:center;
+    padding:28px 0; border-bottom:1px solid var(--line);
+  }
+  .project-item .idx{font-family:var(--font-display); font-size:1.6rem; color:var(--ink-soft); font-style:italic;}
+  .project-item h3{font-size:1.15rem; font-weight:600;}
+  .project-item p{color:var(--ink-soft); font-size:0.92rem; margin-top:6px;}
+  .project-item .status{
+    font-size:0.8rem; color:var(--accent); border:1px solid var(--accent); padding:6px 12px;
+    border-radius:20px; white-space:nowrap;
+  }
+  @media (max-width:640px){
+    .project-item{grid-template-columns:1fr; gap:8px;}
+    .project-item .status{justify-self:start;}
+  }
+
+  /* ---------- contact ---------- */
+  .contact-box{
+    margin-top:34px; background:var(--surface-tint); border:1px solid var(--line); border-radius:16px;
+    padding:44px; display:flex; flex-wrap:wrap; gap:36px; justify-content:space-between; align-items:flex-start;
+  }
+  .contact-box .cta-text{max-width:360px;}
+  .contact-box .cta-text p{color:var(--ink-soft); margin-top:10px;}
+  .contact-links{display:flex; flex-direction:column; gap:14px;}
+  .contact-links a, .contact-links .disabled{
+    font-size:0.98rem; text-decoration:none; display:flex; align-items:center; gap:10px;
+  }
+  .contact-links a{color:var(--ink);}
+  .contact-links a:hover{color:var(--accent);}
+  .contact-links .disabled{color:var(--ink-soft); opacity:.65; cursor:default;}
+  .contact-links .tag-soon{font-size:0.72rem; border:1px solid var(--line); border-radius:12px; padding:2px 8px;}
+
+  footer{border-top:1px solid var(--line); padding:30px 0;}
+  footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:0.85rem; color:var(--ink-soft);}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="header-row">
+    <a class="logo" href="#home">Bless<span>analyst</span></a>
+    <nav class="desktop-nav" aria-label="Section navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <span class="badge-remote header-only"><span class="dot-pulse"></span>Available for remote work</span>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle color theme">☾</button>
+      <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+  <span class="m-foot">Available for remote work — reach out anytime.</span>
+</div>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <h1>Blessing<br><em>Emilefo</em></h1>
+          <p class="role">Business Analyst turning data into decisions — fluent across spreadsheets, databases, dashboards and code, with a sharp eye for data entry and virtual assistant support. Working remotely with teams anywhere.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="150" cy="110" r="86" fill="none" stroke="var(--accent)" stroke-width="1.4" opacity="0.5"/>
+            <circle cx="150" cy="110" r="60" fill="none" stroke="var(--accent)" stroke-width="1.4" opacity="0.7"/>
+            <circle cx="150" cy="110" r="34" fill="var(--accent)" opacity="0.9"/>
+            <circle cx="150" cy="110" r="34" fill="none" stroke="var(--gold)" stroke-width="2"/>
+            <line x1="150" y1="24" x2="150" y2="196" stroke="var(--line)" stroke-width="1"/>
+            <line x1="64" y1="110" x2="236" y2="110" stroke="var(--line)" stroke-width="1"/>
+          </svg>
+          <p class="panel-note"><strong>Based remotely.</strong> Comfortable working across time zones with distributed teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <span class="eyebrow reveal">About</span>
+      <h2 class="section-title reveal">Trained in data. Focused on business.</h2>
+      <div class="about-grid">
+        <p class="pull reveal">"Numbers only matter once they change a decision."</p>
+        <div class="reveal">
+          <p class="body-text">Blessing trained as a data analyst before choosing to specialize in business analysis — connecting raw numbers to the decisions a business actually needs to make. She's equally comfortable cleaning a messy dataset and presenting the story behind it to stakeholders.</p>
+          <p class="body-text">A genuine tech enthusiast, she picks up new tools quickly and applies them to real, practical problems rather than keeping skills theoretical — with several hands-on projects across spreadsheets, databases, dashboards and small apps behind her. She's also a reliable hand for data entry and virtual assistant work, bringing the same accuracy and follow-through to day-to-day support tasks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <span class="eyebrow reveal">Skills</span>
+      <h2 class="section-title reveal">Tools she reaches for</h2>
+      <div class="skill-groups">
+        <div class="skill-group reveal">
+          <h3>Spreadsheets &amp; modeling</h3>
+          <p>Building and auditing working models stakeholders can trust.</p>
+          <div class="pill-row"><span class="pill">Microsoft Excel</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Data &amp; databases</h3>
+          <p>Structuring and querying data at the source.</p>
+          
+          <div class="pill-row"><span class="pill">MySQL</span><span class="pill">SQL server</span><span class="pill">Postgre</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Programming &amp; prototypes</h3>
+          <p>Scripting analysis and shipping small, usable apps.</p>
+          <div class="pill-row"><span class="pill">Python</span><span class="pill">NumPy</span><span class="pill">Streamlit</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Visualization &amp; reporting</h3>
+          <p>Turning findings into dashboards and documentation people actually read.</p>
+          <div class="pill-row"><span class="pill">Power BI</span><span class="pill">Microsoft Word</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Support &amp; operations</h3>
+          <p>Keeping the details right when the work is repetitive, time-sensitive, or ongoing.</p>
+          <div class="pill-row"><span class="pill">Data Entry</span><span class="pill">Virtual Assistance</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <span class="eyebrow reveal">Projects</span>
+      <h2 class="section-title reveal">Selected work</h2>
+      <div class="project-list">
+        <div class="project-item reveal">
+          <span class="idx">01</span>
+          <div><h3>Add your project title</h3><p>Swap this slot for a case study — the problem, the tools used, and the outcome.</p></div>
+          <span class="status">Ready for content</span>
+        </div>
+        <div class="project-item reveal">
+          <span class="idx">02</span>
+          <div><h3>Add your project title</h3><p>Great place for a dashboard build, a database project, or an Excel model.</p></div>
+          <span class="status">Ready for content</span>
+        </div>
+        <div class="project-item reveal">
+          <span class="idx">03</span>
+          <div><h3>Add your project title</h3><p>Link a live Streamlit app or a Power BI report here.</p></div>
+          <span class="status">Ready for content</span>
+        </div>
+        <div class="project-item reveal">
+          <span class="idx">04</span>
+          <div><h3>Add your project title</h3><p>Room for one more — pick your strongest, most recent piece of work.</p></div>
+          <span class="status">Ready for content</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <span class="eyebrow reveal">Contact</span>
+      <h2 class="section-title reveal">Let's work together</h2>
+      <div class="contact-box reveal">
+        <div class="cta-text">
+          <span class="badge-remote"><span class="dot-pulse"></span>Available for remote work</span>
+          <p>Have a dataset that needs a story, or a process that needs a clearer view? Reach out — I work with teams anywhere.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:blessanalyst@gmail.com">blessanalyst@gmail.com</a>
+          <a href="https://github.com/blessanalyst" target="_blank" rel="noopener">github.com/blessanalyst</a>
+          <a href="https://linkedin.com/in/blessanalyst" target="_blank" rel="noopener">linkedin.com/in/blessanalyst</a>
+          <span class="disabled">Resume <span class="tag-soon">coming soon</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>BlessAnalyst — Blessing Emilefo</p>
+    <p id="year"></p>
+  </div>
+</footer>
+
+<script>
+  const html = document.documentElement;
+  const themeBtn = document.getElementById('themeToggle');
+
+  function applyTheme(theme){
+    html.setAttribute('data-theme', theme);
+    themeBtn.textContent = theme === 'dark' ? '☀' : '☾';
+    try{ localStorage.setItem('blessanalyst-theme', theme); }catch(e){}
+  }
+  (function initTheme(){
+    let saved = null;
+    try{ saved = localStorage.getItem('blessanalyst-theme'); }catch(e){}
+    if(saved){ applyTheme(saved); }
+    else{ applyTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); }
+  })();
+  themeBtn.addEventListener('click', () => {
+    applyTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  // Mobile hamburger menu
+  const burger = document.getElementById('burgerBtn');
+  const menu = document.getElementById('mobileMenu');
+  function toggleMenu(open){
+    const isOpen = open !== undefined ? open : !menu.classList.contains('open');
+    menu.classList.toggle('open', isOpen);
+    burger.classList.toggle('open', isOpen);
+    burger.setAttribute('aria-expanded', String(isOpen));
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+  burger.addEventListener('click', () => toggleMenu());
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
+
+  document.getElementById('year').textContent = '© ' + new Date().getFullYear();
+
+  // Scroll-triggered reveal animations
+  const revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold:0.15, rootMargin:'0px 0px -60px 0px' });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('visible'));
+  }
+</script>
+
+</body>
+</html>
