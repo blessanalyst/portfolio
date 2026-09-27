@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Blessing Emilefo | BlessAnalyst — Business Analyst &amp; Virtual Assistant</title>
@@ -23,7 +26,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://blessanalyst.github.io/portfolio/">
 <meta name="twitter:title" content="Blessing Emilefo | BlessAnalyst — Business Analyst &amp; Virtual Assistant">
-<meta name="twitter:description" content="Remote Business Analyst offering data analysis, data entry and virtual assistance — skilled in Excel, MySQL, Python, Power BI and Word.">
+<meta name="twitter:description" content="Remote Business Analyst offering data analysis, data entry and virtual assistance — skilled in Excel, MySQL, Power BI and Word.">
 <meta name="twitter:image" content="https://blessanalyst.github.io/portfolio/og-image.png">
 <style>
   :root{
@@ -68,21 +71,32 @@
   :focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
   section{padding:96px 0;}
   @media (max-width:760px){ section{padding:64px 0;} .wrap{padding:0 22px;} }
-.float_master_whatsapp {
-  position: fixed;
-  top: 80%;
-  right: 28px;
-  padding: 20px;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  background-color: #2E7D5B;
-  color: #fff;
-}
+
+  /* ---------- floating WhatsApp button ---------- */
+  .float_master_whatsapp {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    background-color: #2E7D5B;
+    color: #fff;
+    text-decoration:none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.28);
+    z-index: 150;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .float_master_whatsapp:hover{ transform:translateY(-2px); box-shadow:0 10px 22px rgba(0,0,0,0.32); color:#fff; }
+  .float_master_whatsapp i{ line-height:1; }
+  @media (max-width:760px){
+    .float_master_whatsapp{ width:52px; height:52px; font-size:23px; bottom:20px; right:20px; }
+  }
+
   /* ---------- scroll reveal ---------- */
   .reveal{
     opacity:0; transform:translateY(26px);
@@ -267,6 +281,7 @@
   .contact-links a:hover{color:var(--accent);}
   .contact-links .disabled{color:var(--ink-soft); opacity:.65; cursor:default;}
   .contact-links .tag-soon{font-size:0.72rem; border:1px solid var(--line); border-radius:12px; padding:2px 8px;}
+  .contact-links i{width:18px; text-align:center; color:var(--accent);}
 
   footer{border-top:1px solid var(--line); padding:30px 0;}
   footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:0.85rem; color:var(--ink-soft);}
@@ -358,8 +373,7 @@
         <div class="skill-group reveal">
           <h3>Data &amp; databases</h3>
           <p>Structuring and querying data at the source.</p>
-          
-          <div class="pill-row"><span class="pill">MySQL</span><span class="pill">SQL server</span><span class="pill">Postgre</span></div>
+          <div class="pill-row"><span class="pill">MySQL</span><span class="pill">SQL Server</span><span class="pill">PostgreSQL</span></div>
         </div>
         <div class="skill-group reveal">
           <h3>Programming &amp; prototypes</h3>
@@ -419,17 +433,22 @@
           <p>Have a dataset that needs a story, or a process that needs a clearer view? Reach out — I work with teams anywhere.</p>
         </div>
         <div class="contact-links">
-          <a href="mailto:blessanalyst@gmail.com">blessanalyst@gmail.com</a>
-          <a href="https://github.com/blessanalyst" target="_blank" rel="noopener">github.com/blessanalyst</a>
-          <a href="https://linkedin.com/in/blessanalyst" target="_blank" rel="noopener">linkedin.com/in/blessanalyst</a>
-            <a href="blessing-emilefo-resume.pdf" download rel="noopener">  Download Resume</a> 
+          <a href="mailto:blessanalyst@gmail.com"><i class="fa fa-envelope"></i> blessanalyst@gmail.com</a>
+          <a href="https://github.com/blessanalyst" target="_blank" rel="noopener"><i class="fa fa-github"></i> github.com/blessanalyst</a>
+          <a href="https://linkedin.com/in/blessanalyst" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i> linkedin.com/in/blessanalyst</a>
+          <a href="https://wa.me/2349049418330" target="_blank" rel="noopener"><i class="fa fa-whatsapp"></i> WhatsApp: +234 904 941 8330</a>
+          <a href="blessing-emilefo-resume.pdf" download rel="noopener"><i class="fa fa-download"></i> Download Resume</a>
         </div>
       </div>
     </div>
   </section>
 
 </main>
-<div class="float_master_whatsapp fa-whatsapp"></div>
+
+<a class="float_master_whatsapp" href="https://wa.me/2349049418330" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+</a>
+
 <footer>
   <div class="wrap">
     <p>BlessAnalyst — Blessing Emilefo</p>
